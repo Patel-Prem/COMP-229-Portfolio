@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#vision, #mission{
+  text-align: center;
+}
+
+.title{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.title-1{
+  font-size: xx-large;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.title-2{
+  font-size: x-large;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.description{
+  font-family: 'Times New Roman', serif;
+  font-size: large;
+}
+
+.my-details, .direct-contact, .services-offer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-details .intro{
+  /* border: 1px solid red; */
+  width: 70%;
+}
+
+/* .my-details .photo{
+  border: 1px solid gray;
+} */
+
+.my-details .intro .name{
+  color: crimson;
+}
+
+.description-myself{
+  text-align: justify;
+}
+
+#my-photo{
+  width: 45%;
+  border: 2px solid crimson;
+  float: right;
+}
+
+.my-resume{
+  text-transform: uppercase;
+  color: crimson;
+  font-family: 'Times New Roman', serif;
+}
+
+.my-resume a, .my-contact a{
+  text-decoration: none;
+  color: crimson;
+}
+
+.my-resume a:hover, .my-contact a:hover{
+  text-decoration: underline;
+}
+
+.contact-details{
+  margin-left: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/* .direct-contact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.contact{
+  width: 33.33%;
+}
+
+.card {
+  width: 18rem;
+  border: 1px solid black;
+  /* aspect-ratio: 1; */
+}
+
+.card-img-top {
+  width: 100%;
+  aspect-ratio: 2/1;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.underline:hover{
+  color: crimson;
+}
