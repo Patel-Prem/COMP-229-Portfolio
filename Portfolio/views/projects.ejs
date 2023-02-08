@@ -1,12 +1,11 @@
-<%-include partials/header.ejs%>
-<%-include partials/navbar.ejs%>
+<%-include partials/header.ejs%> <%-include partials/navbar.ejs%>
 
-<section id="projects" class="container-fluid mt-5">
+<!-- <section id="projects" class="container-fluid mt-5"> -->
 
-    <h5><a href="#project-1">Project 1: Online Exam System</a></h5>
+<!-- <h5><a href="#project-1">Project 1: Online Exam System</a></h5>
     <h5><a href="#project-2">Project 2: ePass</a></h5>
-    <h5><a href="#project-3">Project 3: News-Monkey</a></h5>
-    <div class="projects mt-5">
+    <h5><a href="#project-3">Project 3: News-Monkey</a></h5> -->
+<!-- <div class="projects mt-5">
         <div id="project-1">
             <p class="title title-1 underline">1) Online Exam System</p>
             <p class="description">
@@ -173,8 +172,42 @@
             </p>
         </div>
     </div>
+</section> -->
 
-</section>
+<div class="container">
+  <h2
+    id="projects"
+    class="mob-h2 page-scroll"
+    style="font-size: 56px; font-weight: 700; margin-top: 50px"
+  >
+    <span class="low-highlight-cyan">Projects</span>
+  </h2>
+  <div class="projects-on-github">
+    <p>Available On Github</p>
+    <div class="projects" data-aos="fade-up" data-aos-duration="1500">
+      <div class="repo-card" data-repo="Patel-Prem/TextUtils"></div>
+      <div class="repo-card" data-repo="Patel-Prem/News-Monkey"></div>
+    </div>
+  </div>
+  <div class="project-academic">
+    <p>Academic Projects</p>
+    <div class="projects" data-aos="fade-up" data-aos-duration="1500">
+      <div class="services">
+        <div class="card">
+          <div class="box">
+            <div class="service-content">
+              <h2>01</h2>
+              <h3>ePASS</h3>
+              <p>
+                Online Grievance Redressal System For Bus Pass
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<%-include partials/bottom_navbar.ejs%>
-<%-include partials/footer.ejs%>
+<%-include partials/bottom_navbar.ejs%> <%-include partials/footer.ejs%>

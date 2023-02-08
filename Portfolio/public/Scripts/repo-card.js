@@ -1,14 +1,3 @@
-(function (){
-    function start () {
-        console.log("App Started...")
-    }
-
-    window.addEventListener("load", start);
-})();
-
-
-
-
 window.addEventListener('DOMContentLoaded', async function() {
     async function get(url) {
       const resp = await fetch(url);
@@ -22,7 +11,6 @@ window.addEventListener('DOMContentLoaded', async function() {
       const name = el.getAttribute('data-repo');
   
       const data = await get(`https://api.github.com/repos/${name}`);
-      console.log(`https://api.github.com/repos/${name}`);
   
       data.description = (data.description || '').replace(/:\w+:/g, function(match) {
         const name = match.substring(1, match.length - 1);
