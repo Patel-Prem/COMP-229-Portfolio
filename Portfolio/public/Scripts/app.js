@@ -7,6 +7,15 @@
 })();
 
 
+// const form  = document.getElementById('contact-form');
+
+// form.addEventListener('submit', (event) => {
+//   const form  = document.getElementById('contact-form');
+//   // event.preventDefault();
+//   document.getElementById("contact-msg").innerText = "Thank you " + form.elements["first_name"].value + " " + form.elements['last_name'].value + " for making a call back request! :)";
+//   // form.submit();
+// });
+
 
 
 window.addEventListener('DOMContentLoaded', async function() {
