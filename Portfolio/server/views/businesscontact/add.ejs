@@ -1,0 +1,20 @@
+<%-include ../partials/header.ejs%> <%-include ../partials/navbar.ejs%>
+
+
+<section id="addbusinesscontact" class="register">
+    <div class="container">
+        <form method="POST" autocomplete="off">
+            <h2>Add Busdiness Contact</h2>
+            <label for="name"><b>Contact Name</b></label>
+            <input type="text" placeholder="Enter Contact Name" name="contactname" required />
+
+            <label for="mobilenumber"><b>Contact Number</b></label>
+            <input type="number" placeholder="Enter Contact Number " name="mobilenumber" required />
+            
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="contactemail" required />
+            
+            <button type="submit" class="registerbtn">Add</button>
+        </form>
+    </div>
+</section>

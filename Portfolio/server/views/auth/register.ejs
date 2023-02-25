@@ -1,0 +1,29 @@
+<%-include ../partials/header.ejs%> <%-include ../partials/navbar.ejs%>
+
+
+<section class="register">
+    <div class="container">
+        <form method="POST" autocomplete="off">
+            <h2>Register</h2>
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required />
+            
+            <label for="display"><b>Display Name</b></label>
+            <input type="text" placeholder="Enter Display Name" name="displayName" required />
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" required />
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required />
+            
+            <label for="confirm-password"><b>Confirm Password:</b></label>
+			<input type="password" placeholder="Confirm Password" name="confirm-password" required>
+            
+            <button type="submit" class="registerbtn">Register</button>
+            <div class="signin">
+                <p>Already have an account? <a href="/login">Sign in</a>.</p>
+            </div>
+        </form>
+    </div>
+</section>

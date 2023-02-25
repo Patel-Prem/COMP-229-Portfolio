@@ -1,0 +1,21 @@
+    <div class="container">
+      <!-- navegation bar-->
+      <header>
+        <a href="/home" class="logo"><img src="/Assets/images/logo-no-background_1.jpeg" alt=""></a>
+        <ul>
+          <li><a class="page" href="/home" id="home-btn"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="/about" class="page" id="about-btn"><i class="fa-solid fa-user"></i> About Me</a></li>
+          <li><a href="/services" class="page"id="service-btn"><i class="fa-solid fa-users-gear"></i> Services</a></li>
+          <li><a href="/projects" class="page" id="project-btn"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+          <li><a href="/contact" class="page" id="contact-me-btn"><i class="fa-solid fa-address-card"></i> Contact Me</a></li>
+          <li><a href="/businessContactList" class="page" id="business-contact-btn"><i class="fa-solid fa-phone"></i> Business Contact</a></li>
+          <%if(typeof displayName == 'string' && displayName){%>
+            <li class="page"><i class="fas fa-lg fa-user"></i>
+              <b>Welcome, <%=displayName%></b>
+              <li class="page"><a href="/logout"><i class="fas fa-lg fa-sign-out-alt"></i>Logout</a></li>
+              <%}else{%>
+                <li class="page"><a href="/login"><i class="fas fa-lg fa-sign-in-alt"></i>Login</a></li>
+              <%}%>
+          </li>
+        </ul>
+      </header>

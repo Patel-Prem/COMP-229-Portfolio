@@ -1,0 +1,35 @@
+<%-include ../partials/header.ejs%> <%-include ../partials/navbar.ejs%>
+  <main class="container">
+        <!-- <div class="row"> -->
+            <!-- <div class="col-md-offset-3 col md-8"> -->
+                <h1> <%=title%> </h1>
+                <%if(typeof displayName == 'string' && displayName){%>
+                <a href="/businessContactList/add" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Business Contact </a>
+                <% } %>
+                <br>
+                <table class="table table-bordered table-striped table-hover mt-3">
+                    <tr>
+                        <th class="text-center"> Contact Name </th>
+                        <th class="text-center"> Contact Number </th>
+                        <th class="text-center"> Contact Email </th>
+                        <%if(typeof displayName == 'string' && displayName){%>
+                        <th class="text-center"> Actions </th>
+                        <% } %>
+                    </tr>
+                    <%for(let count = 0; count < businessContactList.length; count++) {%>
+                            <tr>
+                                <td class="text-center"> <%=businessContactList[count].name%> </td>        
+                                <td class="text-center"> <%=businessContactList[count].number%> </td>
+                                <td class="text-center"> <%=businessContactList[count].email%> </td>
+                                <%if(typeof displayName == 'string' && displayName){%>
+                                <td class="text-center"> <a href="/businessContactList/edit/<%=businessContactList[count]._id%>"><i class="fa-solid fa-pen-to-square text-secondary"></i></a> &nbsp; <a href="/businessContactList/delete/<%=businessContactList[count]._id%>"><i class="fa-solid fa-trash text-danger delete"></i></a></td>
+                                <% } %>
+                            </tr>
+                      <%}%> 
+                </table>
+            <!-- </div> -->
+        <!-- </div> -->
+  </main>
+  <%-include ../partials/bottom_navbar.ejs%> <%-include ../partials/footer.ejs%>
+
+
