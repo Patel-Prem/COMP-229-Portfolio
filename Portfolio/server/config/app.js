@@ -27,6 +27,7 @@ mongoDB.once('open', () => {
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
 let businessContactRouter = require('../routes/business_contacts');
+
 const { initialize } = require('passport');
 
 let app = express();
